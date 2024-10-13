@@ -1,0 +1,36 @@
+name: Build Test Version 
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '**'
+    paths-ignore:
+      - 'README.md'
+      - 'fastlane/**'
+      - 'assets/**'
+      - '.github/**/*.md'
+      - '.github/FUNDING.yml'
+      - '.github/ISSUE_TEMPLATE/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      
+      - name: set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: "zulu"
+          cache: 'gradle'
+
+      - name: Build debug APK and run jvm tests
+        run: ./gradlew assembleDebug lintFossDebug testFossDebugUnitTest --stacktrace -DskipFormatKtlint
+        
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: app
+          path: app/build/outputs/apk/*/*/*.apk
