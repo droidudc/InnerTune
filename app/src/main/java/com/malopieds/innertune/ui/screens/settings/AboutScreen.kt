@@ -138,7 +138,7 @@ fun AboutScreen(
             color = MaterialTheme.colorScheme.secondary,
         )
         Text(
-            text = "Forked from ViMusic",
+            text = "Forked from ViMusic by vfsfitvnm",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary,
         )
@@ -159,16 +159,10 @@ fun AboutScreen(
         /* new code starts here */
 
         
-        IconButton(
-                onClick = { uriHandler.openUri("https://www.github.io/flowtune/") },
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.launguage),
-                    contentDescription = null,
-                )
-            }
-          }
-    }
+        
+/* description*/
+
+        
 
 /* ends here */
 
