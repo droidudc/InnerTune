@@ -155,7 +155,22 @@ fun AboutScreen(
                 )
             }
         }
+
+        /* new code starts here */
+
+        
+        IconButton(
+                onClick = { uriHandler.openUri("https://www.github.io/flowtune/") },
+            ) {
+                Icon(
+                    painter = painterResource(R.drawable.launguage),
+                    contentDescription = null,
+                )
+            }
+          }
     }
+
+/* ends here */
 
     TopAppBar(
         title = { Text(stringResource(R.string.about)) },
