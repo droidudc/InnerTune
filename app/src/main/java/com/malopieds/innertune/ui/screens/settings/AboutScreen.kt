@@ -137,11 +137,13 @@ fun AboutScreen(
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary,
         )
+        /* text */
         Text(
-            text = "Forked from ViMusic by vfsfitvnm",
+            text = "Based on ViMusic Source code",
             style = MaterialTheme.typography.titleMedium,
             color = MaterialTheme.colorScheme.secondary,
         )
+        /*ends */
 
         Spacer(Modifier.height(8.dp))
 
@@ -155,16 +157,7 @@ fun AboutScreen(
                 )
             }
         }
-
-        /* new code starts here */
-
-        
-        
-/* description*/
-
-        
-
-/* ends here */
+    }
 
     TopAppBar(
         title = { Text(stringResource(R.string.about)) },
