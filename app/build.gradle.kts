@@ -15,11 +15,11 @@ android {
     namespace = "com.malopieds.innertune"
     compileSdk = 35
     defaultConfig {
-        applicationId = "com.malopieds.innertune"
+        applicationId = "com.abhiram.flowtune"
         minSdk = 24
         targetSdk = 35
         versionCode = 26
-        versionName = "0.5.9"
+        versionName = "0.1.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -30,7 +30,7 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         debug {
-            applicationIdSuffix = ".debug"
+            applicationIdSuffix = ".test"
         }
     }
     flavorDimensions += "version"
