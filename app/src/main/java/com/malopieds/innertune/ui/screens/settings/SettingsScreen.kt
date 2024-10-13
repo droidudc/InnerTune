@@ -49,11 +49,6 @@ fun SettingsScreen(
             onClick = { navController.navigate("settings/appearance") },
         )
         PreferenceEntry(
-            title = { Text(stringResource(R.string.content)) },
-            icon = { Icon(painterResource(R.drawable.language), null) },
-            onClick = { navController.navigate("settings/content") },
-        )
-        PreferenceEntry(
             title = { Text(stringResource(R.string.player_and_audio)) },
             icon = { Icon(painterResource(R.drawable.play), null) },
             onClick = { navController.navigate("settings/player") },
@@ -67,11 +62,6 @@ fun SettingsScreen(
             title = { Text(stringResource(R.string.privacy)) },
             icon = { Icon(painterResource(R.drawable.security), null) },
             onClick = { navController.navigate("settings/privacy") },
-        )
-        PreferenceEntry(
-            title = { Text(stringResource(R.string.discord_integration)) },
-            icon = { Icon(painterResource(R.drawable.discord), null) },
-            onClick = { navController.navigate("settings/discord") },
         )
         PreferenceEntry(
             title = { Text(stringResource(R.string.backup_restore)) },
