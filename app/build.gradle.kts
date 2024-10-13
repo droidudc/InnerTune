@@ -18,8 +18,8 @@ android {
         applicationId = "com.abhiram.flowtune"
         minSdk = 24
         targetSdk = 35
-        versionCode = 26
-        versionName = "0.1.1"
+        versionCode = 11
+        versionName = "0.8.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
